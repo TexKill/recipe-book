@@ -13,14 +13,20 @@
 }
 
 .container {}
-.main {}
+.main {
+    background-color: #CECECE;
+}
 
 .main__title {}
 .title {
     font-size: 32px;
-    font-family: ra;
+    text-align: center;
+    padding: 27.5px 0;
 }
-.title__img {}
+.title__img {
+    width: 320px;
+    height: 100%;
+}
 .main__category {}
 
 .main__ingradients {}

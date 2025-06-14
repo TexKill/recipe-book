@@ -1,0 +1,13 @@
+@import url(../components-css/nullstyle.css);
+.header {
+    background-color: #D9D9D9;
+}
+.header__logo {
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    margin-top: 32px;
+    margin-bottom: 10px;
+    display: inline-block;
+}

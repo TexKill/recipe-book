@@ -4,26 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Recipe Book</title>
+    <title>Home</title>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="header__logo">
-                <img class="logo" src="../assets/img/logo.png" alt="logo">
-            </div>
-            <div class="header__right">
-                <div class="header__search"></div>
-                <div class="header__favorites"></div>
-                <div class="header__theme"></div>
+                <a href="index.html"><img class="hlogo" src="/assets/img/logo2.svg" alt="logo"></a>
             </div>
         </header>
-        <div class="container">
-            <main class="main">
-            
-            </main>
-            <footer></footer>
-        </div>
+        <main class="main">
+            <section class="main__surprise">
+                <div class="surprise__text">
+                    <p class="surprise__text1">you don't know what <br> to cook today?</p>
+                    <p class="surprise__text2">Try a surprise recipe</p>
+                </div>
+                <button id="openModal" class="surprise__btn">Surprise recipe</button>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close"><img src="assets/img/close.png" alt=""></span>
+                        <img class="modal__img" src="assets/img/categories-cards/eccles-cakes.png" alt="">
+                        <h2 class="modal__title">Eccles Cakes</h2>
+                        <p class="modal__category">Dessert</p>
+                        <div class="modal__info">
+                            <button class="modal__info-viewrecipebtn">View recipe</button>
+                            <button class="modal__info-changebtn">Change</button>
+                            <button class="modal__info-closebtn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__search">
+                <input class="search__input" type="text" placeholder="Buscar...">
+            </section>
+            <section class="main__categories">
+                <h2 class="categories__title">Categories</h2>
+                <div class="categories__cards">
+                    <div class="categories__card">
+                        <img class="categories__card-img" src="assets/img/categories/vegeterian.png" alt="vegeterian">
+                        <h3 class="categories__card-title">Vegeterian</h3>
+                    </div>
+                    <div class="categories__card">
+                        <img class="categories__card-img" src="assets/img/categories/beef.png" alt="beef">
+                        <h3 class="categories__card-title">Beef</h3>
+                    </div>
+                    <div class="categories__card">
+                        <img class="categories__card-img" src="assets/img/categories/chicken.png" alt="chicken">
+                        <h3 class="categories__card-title">Chicken</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="main__cards">
+                <a href="pages/recipe.html" class="card">
+                    <img class="card__img" src="./assets/img/categories-cards/spicy-arrabiata-penne.png" alt="spicy-arrabiata-penne">
+                    <div class="card__info">
+                        <h2 class="card__title">Spicy Arrabiata Penne</h2>
+                        <p class="card__category">Vegetarian</p>
+                    </div>
+                </a>
+                <a href="pages/recipe.html" class="card">
+                    <img class="card__img" src="./assets/img/categories-cards/bisteck.png" alt="bisteck">
+                    <div class="card__info">
+                        <h2 class="card__title">Bisteck</h2>
+                        <p class="card__category">Beef</p>
+                    </div>
+                </a>
+                <a href="pages/recipe.html" class="card">
+                    <img class="card__img" src="./assets/img/categories-cards/chicken-enchilada-casserole.png" alt="chicken-enchilada-casserole">
+                    <div class="card__info">
+                        <h2 class="card__title">Chicken Enchilada Casserole</h2>
+                        <p class="card__category">Chiken</p>
+                    </div>
+                </a>
+                <a href="pages/recipe.html" class="card">
+                    <img class="card__img" src="./assets/img/categories-cards/dundee-cake.png" alt="dundee-cake">
+                    <div class="card__info">
+                        <h2 class="card__title">Dundee Cake</h2>
+                        <p class="card__category">Dessert</p>
+                    </div>
+                </a>
+                <a href="pages/recipe.html" class="card">
+                    <img class="card__img" src="./assets/img/categories-cards/english-breakfast.png" alt="english-breakfast">
+                    <div class="card__info">
+                        <h2 class="card__title">English Breakfast</h2>
+                        <p class="card__category">Breakfast</p>
+                    </div>
+                </a>
+                <a href="pages/recipe.html" class="card">
+                    <img class="card__img" src="./assets/img/categories-cards/eccles-cakes.png" alt="english-breakfast">
+                    <div class="card__info">
+                        <h2 class="card__title">Eccles Cakes</h2>
+                        <p class="card__category">Dessert</p>
+                    </div>
+                </a>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__logo">
+                <img class="flogo" src="../assets/img/logo2.svg" alt="logo">
+            </div>
+            <div class="footer__social">
+                <a class="social-item" href="#"><img src="/assets/img/facebook.png" alt="facebook"></a>
+                <a class="social-item" href="#"><img src="/assets/img/instagram.png" alt="instagram"></a>
+                <a class="social-item" href="#"><img src="/assets/img/gmail.png" alt="email"></a>
+            </div>
+        </footer>  
     </div>
+
+    <script src="assets/js/modal-window.js"></script>
 </body>
 </html>

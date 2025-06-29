@@ -1,14 +1,19 @@
 @import url(../components-css/nullstyle.css);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
 
 .wrapper {
-    min-height: 390px;
+    max-height: 390px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 .header {
-    background-color: #D9D9D9;
+    background-color: #DAE2B6;
 }
 .header__logo {
     display: flex;
@@ -21,8 +26,8 @@
 }
 
 .main {
-    flex: 1;
-    background-color: #8e8e8e;
+    flex: 1 1 auto;
+    background-color: #ffffff;
 }
 
 .main__title {
@@ -33,7 +38,7 @@
     margin-bottom: 37px;
 }
 .title {
-    color: #fff;
+    color: #363636;
     font-size: 32px;
     font-weight: 700;
     padding: 27.5px 0;
@@ -45,7 +50,7 @@
 }
 .food-img {
     display: inline-block;
-    width: 353px;
+    max-width: 353px;
     height: 100%;
 }
 .category {
@@ -56,17 +61,17 @@
     margin-top: 16px;
     max-width: 85px;
     max-height: 28px;
-    background: #D9D9D9;
+    background: #FFE17B;
+    box-shadow: 1px 1px 3px #969696;
 }
 
 .main__ingredients {
-    color: #FFFAFA;
+    color: #363636;
     margin-bottom: 16px;
 }
 .ingredients-title, 
 .instructions-title {
     text-align: center;
-    color: #FFFAFA;
     font-size: 26px;
     font-weight: 600;
 }
@@ -82,14 +87,15 @@
 }
 
 .instructions-text{
-    color: #FFFFFF;
+    line-height: 30px;
     font-size: 20px;
     font-weight: 500;
     margin: 16px 34.5px;
 }
 
 .footer {
-    background: #D9D9D9;
+    margin-top: 77px;
+    background: #DAE2B6;
 }
 .footer__logo {
     display: flex;

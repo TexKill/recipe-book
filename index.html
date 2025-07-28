@@ -16,7 +16,7 @@
         <main class="main">
             <section class="main__surprise">
                 <div class="surprise__text">
-                    <p class="surprise__text1">you don't know what <br> to cook today?</p>
+                    <p class="surprise__text1">you don't know what to cook today?</p>
                     <p class="surprise__text2">Try a surprise recipe</p>
                 </div>
                 <button id="openModal" class="surprise__btn">Surprise recipe</button>
@@ -27,8 +27,8 @@
                         <h2 class="modal__title">Eccles Cakes</h2>
                         <p class="modal__category">Dessert</p>
                         <div class="modal__info">
-                            <button class="modal__info-viewrecipebtn">View recipe</button>
-                            <button class="modal__info-changebtn">Change</button>
+                            <a href="pages/recipe.html" class="modal__info-viewrecipebtn">View recipe</a>
+                            <a href="" class="modal__info-changebtn">Change</a>
                             <button class="modal__info-closebtn">Close</button>
                         </div>
                     </div>
@@ -51,6 +51,14 @@
                     <div class="categories__card">
                         <img class="categories__card-img" src="assets/img/categories/chicken.png" alt="chicken">
                         <h3 class="categories__card-title">Chicken</h3>
+                    </div>
+                    <div class="categories__card">
+                        <img class="categories__card-img" src="assets/img/categories/dessert.png" alt="dessert">
+                        <h3 class="categories__card-title">Dessert</h3>
+                    </div>
+                    <div class="categories__card">
+                        <img class="categories__card-img" src="assets/img/categories/lamb.png" alt="lamb">
+                        <h3 class="categories__card-title">Lamb</h3>
                     </div>
                 </div>
             </section>
@@ -91,22 +99,37 @@
                     </div>
                 </a>
                 <a href="pages/recipe.html" class="card">
-                    <img class="card__img" src="./assets/img/categories-cards/eccles-cakes.png" alt="english-breakfast">
+                    <img class="card__img" src="./assets/img/categories-cards/dunk-confit.png" alt="dunk-confit">
                     <div class="card__info">
-                        <h2 class="card__title">Eccles Cakes</h2>
-                        <p class="card__category">Dessert</p>
+                        <h2 class="card__title">Duck confit</h2>
+                        <p class="card__category">Miscellaneous</p>
+                    </div>
+                </a>
+                <a href="pages/recipe.html" class="card">
+                    <img class="card__img" src="./assets/img/categories-cards/fettucine-alfredo.png" alt="fettucine-alfredo">
+                    <div class="card__info">
+                        <h2 class="card__title">Fettucine alfredo</h2>
+                        <p class="card__category">Pasta</p>
+                    </div>
+                </a>
+                <a href="pages/recipe.html" class="card">
+                    <img class="card__img" src="./assets/img/categories-cards/frech-onion-soup.png" alt="frech-onion-soup">
+                    <div class="card__info">
+                        <h2 class="card__title">French Onion Soup</h2>
+                        <p class="card__category">Side</p>
                     </div>
                 </a>
             </section>
         </main>
         <footer class="footer">
-            <div class="footer__logo">
-                <img class="flogo" src="../assets/img/logo2.svg" alt="logo">
-            </div>
+            <a href="index.html" class="footer__logo">
+                <img class="flogo" src="assets/img/logo2.svg" alt="logo">
+                <img class="footer-logo-tablet" src="assets/img/footer/footer-logo-tablet.png" alt="footer-logo-tablet">
+            </a>
             <div class="footer__social">
-                <a class="social-item" href="#"><img src="/assets/img/facebook.png" alt="facebook"></a>
-                <a class="social-item" href="#"><img src="/assets/img/instagram.png" alt="instagram"></a>
-                <a class="social-item" href="#"><img src="/assets/img/gmail.png" alt="email"></a>
+                <a class="social-item" href="#"><img src="/assets/img/footer/ic_baseline-facebook.png" alt="facebook"></a>
+                <a class="social-item" href="#"><img src="/assets/img/footer/mdi_instagram.png" alt="instagram"></a>
+                <a class="social-item" href="#"><img src="/assets/img/footer/mdi_gmail.png" alt="email"></a>
             </div>
         </footer>  
     </div>

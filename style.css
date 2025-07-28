@@ -28,12 +28,18 @@ body {
 
 .main {
     flex: 1 1 auto;
-    background-color: #ffffff;
+    background-color: #F4EAD5;
 }
 
 .main__surprise {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 24px 0;
-    background: url(assets/img/surprise-bg.png) no-repeat;
+    background: url(assets/img/surprise-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     max-height: 193px;
     text-align: center;
@@ -48,6 +54,7 @@ body {
     color: #FFF9F9;
     font-size: 22px;
     font-weight: 700;
+    max-width: 240px;
 }
 .surprise__text2 {
     filter: drop-shadow(0px 4px 4px rgb(157, 157, 157));
@@ -65,6 +72,7 @@ body {
     padding: 8px 16px;
     color: #363636;
     background: #FFE17B;
+
 }
 
 .modal {
@@ -94,7 +102,7 @@ body {
 }
 .modal__category {
     color: #363636;
-    margin: 0 0 47px 24px;
+    margin: 0 0 47px 30px;
     font-size: 12px;
     font-weight: 600;
     border-radius: 10px;
@@ -112,8 +120,10 @@ body {
     margin-bottom: 26px;
 }
 .modal__info-viewrecipebtn {
+    display: inline-block;
+    box-sizing: border-box;
     border-radius: 5px;
-    padding: 8px 16px;
+    padding: 9px 17px;
     font-weight: 700;
     font-size: 16px;
     background: #FFE17B;
@@ -121,8 +131,10 @@ body {
     border: #FFE17B 1px solid;
 }
 .modal__info-changebtn {
+    display: inline-block;
+    box-sizing: border-box;
     border-radius: 5px;
-    padding: 8px 16px;
+    padding: 9px 17px;
     font-weight: 700;
     font-size: 16px;
     background: #606C5D;
@@ -214,6 +226,7 @@ body {
     text-align: center;
     font-size: 16px;
     font-weight: 600;
+    box-shadow: 0px 2px 3px #969696 ;
 }
 .categories__card-title {
     margin-top: 6px;
@@ -243,11 +256,11 @@ body {
     margin-bottom: 16px;
 }
 .card__category {
+    display: inline-block;
     font-size: 12px;
     font-weight: 600;
     border-radius: 10px;
     padding: 9px 16px;
-    max-width: 85px;
     max-height: 32px;
     background: #FFE17B;
     box-shadow: 1px 1px 3px #969696;
@@ -272,7 +285,286 @@ body {
     align-items: center;
     justify-content: center;
 }
+.footer-logo-tablet {
+    display: none;
+}
 .social-item {
     padding: 0 16px;
     display: inline-block;
+}
+
+
+@media only screen and (min-width: 744px) {
+  .header {
+    background-color: #DAE2B6;
+    }
+    .header__logo {
+        display: flex;
+        justify-content: center;
+    }
+    .hlogo {
+        margin: 8px 0;
+        display: inline-block;
+        max-width: 128px;
+        max-height: 65px;
+    }
+
+
+    .main__surprise {
+        margin: 31px 0;
+        background-image: url(assets/img/surprise-bg2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 208px; /* або інша потрібна висота */
+        text-align: center;
+    }
+    .surprise__text {
+        line-height: 25px;
+    }
+    .surprise__text1 {
+        max-width: none;
+        padding-top: 41px;
+        font-size: 32px;
+        font-weight: 00;
+    }
+    .surprise__text2 {
+        filter: drop-shadow(0px 4px 4px rgb(157, 157, 157));
+        font-weight: 600;
+        margin-top: 4px;
+        font-size: 18px;
+        color: #FFF9F9;
+        margin-bottom: 16px;
+    }
+    .surprise__btn {
+        max-width: none;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        border-radius: 4px;
+        padding: 8px 16px;
+        color: #363636;
+        background: #FFE17B;
+    }
+
+    .modal {
+        display: none; /* приховане за замовчуванням */
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.6);
+        justify-content: center;
+        align-items: center;
+    }
+    .modal-content {
+        background-color: #fff;
+        position: relative;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+    .modal__img {
+        min-width: 530px;
+        width: 100%;
+        margin-top: 61px;
+    }
+    .modal__title {
+        margin: 25px 0 41px 0  ;
+        font-size: 28px;
+        line-height: 25px;
+        font-weight: 700;
+    }
+    .modal__category {
+        color: #363636;
+        margin: 0 0 64px 32px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 10px;
+        padding: 12px 7px 22px;
+        background: #FFE17B;
+        box-shadow: 1px 1px 3px #969696;
+    }
+    .modal__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 38px;
+    }
+    .modal__info-viewrecipebtn {
+        display: inline-block;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 12px 23px;
+        font-weight: 700;
+        font-size: 22px;
+        background: #FFE17B;
+        color: #363636;
+        border: #FFE17B 1px solid;
+    }
+    .modal__info-changebtn {
+        display: inline-block;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 12px 23px;
+        font-weight: 700;
+        font-size: 22px;
+        background: #606C5D;
+        color: #FFE17B;
+        border: #606C5D 1px solid;
+    }
+    .modal__info-closebtn {
+        background: #ffffff;
+        border-radius: 8px;
+        box-sizing: border-box;
+        padding: 11px 22px;
+        font-weight: 700;
+        font-size: 22px;
+        color: red;
+        border: red 1px solid;
+    }
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        font-size: 32px;
+        cursor: pointer;
+    }
+    @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+
+    .main__search {
+        margin: 31px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search__input {
+        font-weight: 500;
+        display: inline-block;
+        width: 553px;
+        height: 50px;
+        border-radius: 6px;
+        font-size: 18px;
+        padding: 10px 20px;
+        letter-spacing: 1px;
+        border: #c1c1c1 1px solid;
+        box-shadow: 0px 3px 3px #969696 ;
+        transition: 0.3s;
+    }
+    .search__input:focus {
+        box-shadow: 0px 3px 5px #333333 ;
+    }
+    .search__input::placeholder {
+        opacity: 0.5;
+    }
+
+    .main__categories {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 17.5px;
+    }
+    .categories__title {
+        text-align: center;
+        font-size: 26px;
+        color: #363636;
+        font-weight: 700;
+    }
+    .categories__cards {
+        margin-top: 16px;
+        display: flex;
+        gap: 16px;
+    }
+    .categories__card-img {
+        width: 119px;
+        height: 74px;
+    }
+    .categories__card {
+        width: 129px;
+        height: 126px;
+        background-color: #F4EAD5;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .categories__card-title {
+        margin-top: 6px;
+    }
+
+    .main__cards{
+        margin: 50px 14px 97px 14px;
+        padding: 0 0 16px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .card {
+        color: #363636;
+        display: block;
+        box-shadow: 1px 5px 20px #d8d8d8;
+        margin-bottom: 20px;
+    }
+    .card__img {
+        width: 100%;
+    }
+    .card__info {
+        border-radius: 0 0 4px 4px;
+        background: #ffffff;
+        padding: 24px 24px 16px 24px;
+    }
+    .card__title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+    .card__category {
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 10px;
+        padding: 9px 16px;
+        background: #FFE17B;
+        box-shadow: 1px 1px 3px #969696;
+    }
+
+
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #DAE2B6;
+        padding: 17px 0 13px 0;
+    }
+    .flogo {
+        margin: 10px auto 24px;
+        display: none;
+    }
+    .footer-logo-tablet {
+        display: inline;
+    }
+    .footer__social {
+        margin-bottom: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-item {
+        padding: 0 16px;
+        display: inline-block;
+    }
 }

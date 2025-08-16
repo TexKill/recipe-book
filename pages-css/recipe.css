@@ -1,8 +1,11 @@
 @import url(../components-css/nullstyle.css);
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+html {
+    overflow-x: hidden
+}
 body {
     font-family: 'Raleway', sans-serif;
+    overflow-x: hidden
 }
 
 .wrapper {
@@ -107,6 +110,9 @@ body {
     display: flex;
     justify-content: center;
 }
+.footer-logo-tablet {
+    display: none;
+}
 .flogo {
     margin: 10px auto 24px;
     display: inline-block;
@@ -140,7 +146,7 @@ body {
 
     .main {
         flex: 1 1 auto;
-        background-color: #FFFCFC;
+        background-color: #fffcfc;
     }
 
     .main__title {
@@ -189,15 +195,31 @@ body {
         font-weight: 600;
     }
     .ingredients-list {
+        gap: 16px;
+        justify-content: center;
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 48px;
     }
     .list-item {
-        border: 1px #363636 solid;
-        font-size: 20px;
-        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        font-size: 11px;
+        font-weight: 600;
+        border-radius: 8px;
+        background: #FFF;
+    }
+    .list-item:hover {
+        box-shadow: 5px 8px 16px #cfcfcf ;
+        transition: 0.3s;
+    }
+    .list-item span {
+        padding: 12px 0px;
     }
     .list-item-img {
+        padding: 11px;
+        min-width: 114px;
+        min-height: 88px;
         display: inline;
         width: 100%;
     }
@@ -215,6 +237,148 @@ body {
         align-items: center;
         background: #DAE2B6;
         padding: 17px 0 13px 0;
+    }
+    .flogo {
+        margin: 10px auto 24px;
+        display: none;
+    }
+    .footer-logo-tablet {
+        display: inline;
+    }
+    .footer__social {
+        margin-bottom: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-item {
+        padding: 0 16px;
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .header {
+        background-color: #DAE2B6;
+    }
+    .header__logo {
+        display: flex;
+        justify-content: center;
+    }
+    .hlogo {
+        margin: 8px 0;
+        display: inline-block;
+        max-width: 128px;
+        max-height: 65px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 1 auto;
+        background-color: #fffcfc;
+    }
+
+    .main__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 48px;
+    }
+    .title {
+        color: #363636;
+        font-size: 48px;
+        line-height: 150%;
+        font-weight: 700;
+        padding: 48px 0 24px 0;
+    }
+    .main__category {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .food-img {
+        display: none;
+    }
+    .food-img-tablet {
+        min-width: 800px;
+        display: inline;
+    }
+    .category {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 10px;
+        padding: 12px 22px 7px 22px;
+        margin-top: 16px;
+        background: #FFE17B;
+        box-shadow: 1px 1px 3px #969696;
+    }
+
+    .main__ingredients {
+        max-width: 1024px;
+        color: #363636;
+        margin-bottom: 16px;
+    }
+    .ingredients-title, 
+    .instructions-title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .ingredients-list {
+        gap: 24px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 48px;
+    }
+    .list-item {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 8px;
+        background: #FFF;
+    }
+    .list-item:hover {
+        box-shadow: 5px 8px 16px #cfcfcf ;
+        transition: 0.3s;
+    }
+    .list-item span {
+        padding: 12px 0px;
+    }
+    .list-item-img {
+        padding: 11px;
+        min-width: 151px;
+        min-height: 114px;
+        display: inline;
+        width: 100%;
+    }
+
+    .main__instructions {
+        max-width: 1024px;
+    }
+    .instructions-title {
+        line-height: 150%;
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .instructions-text{
+        line-height: 150%;
+        font-size: 32px;
+        font-weight: 500;
+        margin: 16px 34.5px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #DAE2B6;
+        padding: 17px 90px 13px 90px;
     }
     .flogo {
         margin: 10px auto 24px;

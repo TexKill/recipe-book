@@ -96,16 +96,3 @@ Contributions are welcome! 🎉
 This project is licensed under the **MIT License**. You are free to use, modify, and share it.
 
 👨‍💻 Author: [TexKill](https://github.com/TexKill)
-
-## 🚀 Deploy on GitHub Pages
-You can easily publish this project online with GitHub Pages:
-
-1. Go to your repository on GitHub  
-2. Open **Settings** → **Pages**  
-3. Under **Source**, select the `main` branch and the `/ (root)` folder  
-4. Click **Save**  
-5. Your site will be available at:
-   ```
-   https://TexKill.github.io/recipe-book
-   ```
-   
